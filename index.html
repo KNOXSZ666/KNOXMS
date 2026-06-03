@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio cá nhân của Nguyễn Văn An — Lập trình viên Full-Stack" />
+  <title>Nguyễn Văn An | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__logo">
+      <span class="logo__bracket">&lt;</span>
+      VanAn
+      <span class="logo__bracket">/&gt;</span>
+    </div>
+    <button class="header__burger" id="burger" aria-label="Mở menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="header__nav" id="nav">
+      <a href="#about"   class="nav__link">Giới thiệu</a>
+      <a href="#skills"  class="nav__link">Kỹ năng</a>
+      <a href="#projects"class="nav__link">Dự án</a>
+      <a href="#contact" class="nav__link nav__link--cta">Liên hệ</a>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">// Xin chào, tôi là</p>
+      <h1 class="hero__name">Nguyễn<br><span class="highlight">Văn An</span></h1>
+      <p class="hero__role">
+        <span class="typewriter" id="typewriter"></span>
+        <span class="cursor">|</span>
+      </p>
+      <p class="hero__bio">
+        Tôi xây dựng những sản phẩm web đẹp, nhanh và đáng tin cậy.
+        Từ ý tưởng đến sản phẩm hoàn chỉnh — tôi ở đây để giúp bạn.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">Xem dự án</a>
+        <a href="#contact"  class="btn btn--ghost">Liên hệ ngay</a>
+      </div>
+    </div>
+    <div class="hero__avatar">
+      <div class="avatar__ring">
+        <div class="avatar__img">VA</div>
+      </div>
+      <div class="avatar__status">
+        <span class="status__dot"></span> Sẵn sàng nhận dự án
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section__title reveal">
+        <span class="title__num">01.</span> Về tôi
+      </h2>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            Tôi là lập trình viên Full-Stack với <strong>3+ năm kinh nghiệm</strong>
+            xây dựng ứng dụng web từ nhỏ đến lớn. Tôi đam mê viết code sạch,
+            thiết kế giao diện trực quan và tối ưu hiệu năng.
+          </p>
+          <p>
+            Triết lý của tôi: <em>"Code tốt là code mà người khác đọc được
+            như đọc văn xuôi."</em>
+          </p>
+          <p>
+            Ngoài lập trình, tôi thích nhiếp ảnh đường phố và khám phá
+            những quán cà phê ẩn mình trong các con hẻm Hà Nội.
+          </p>
+        </div>
+        <div class="about__stats reveal">
+          <!-- Thay số liệu theo thực tế của bạn -->
+          <div class="stat__item">
+            <span class="stat__num">3+</span>
+            <span class="stat__label">Năm KN</span>
+          </div>
+          <div class="stat__item">
+            <span class="stat__num">20+</span>
+            <span class="stat__label">Dự án</span>
+          </div>
+          <div class="stat__item">
+            <span class="stat__num">15+</span>
+            <span class="stat__label">Khách hàng</span>
+          </div>
+          <div class="stat__item">
+            <span class="stat__num">∞</span>
+            <span class="stat__label">Ly cà phê</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section section--dark" id="skills">
+    <div class="container">
+      <h2 class="section__title reveal">
+        <span class="title__num">02.</span> Kỹ năng
+      </h2>
+      <div class="skills__grid">
+
+        <!-- Thêm/xóa skill__card tùy ý -->
+        <div class="skill__card reveal">
+          <div class="skill__icon">⚡</div>
+          <h3 class="skill__name">Frontend</h3>
+          <ul class="skill__list">
+            <li>HTML5 / CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Vue.js / React</li>
+          </ul>
+          <div class="skill__bar">
+            <div class="skill__fill" data-level="90"></div>
+          </div>
+        </div>
+
+        <div class="skill__card reveal">
+          <div class="skill__icon">🛠</div>
+          <h3 class="skill__name">Backend</h3>
+          <ul class="skill__list">
+            <li>Node.js / Express</li>
+            <li>Python / Django</li>
+            <li>REST API</li>
+          </ul>
+          <div class="skill__bar">
+            <div class="skill__fill" data-level="80"></div>
+          </div>
+        </div>
+
+        <div class="skill__card reveal">
+          <div class="skill__icon">🗄</div>
+          <h3 class="skill__name">Database</h3>
+          <ul class="skill__list">
+            <li>MySQL / PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>Firebase</li>
+          </ul>
+          <div class="skill__bar">
+            <div class="skill__fill" data-level="75"></div>
+          </div>
+        </div>
+
+        <div class="skill__card reveal">
+          <div class="skill__icon">🎨</div>
+          <h3 class="skill__name">Design</h3>
+          <ul class="skill__list">
+            <li>Figma</li>
+            <li>UI/UX Thinking</li>
+            <li>Responsive Design</li>
+          </ul>
+          <div class="skill__bar">
+            <div class="skill__fill" data-level="70"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section__title reveal">
+        <span class="title__num">03.</span> Dự án
+      </h2>
+      <div class="projects__grid">
+
+        <!-- Thêm/xóa project__card tùy ý -->
+        <article class="project__card reveal">
+          <div class="project__header">
+            <span class="project__num">01</span>
+            <div class="project__links">
+              <a href="#" class="project__link" title="Xem code">⌥ Code</a>
+              <a href="#" class="project__link" title="Xem demo">↗ Demo</a>
+            </div>
+          </div>
+          <h3 class="project__title">Shop Online</h3>
+          <p class="project__desc">
+            Website thương mại điện tử đầy đủ: giỏ hàng, thanh toán,
+            quản lý đơn hàng và dashboard admin thời gian thực.
+          </p>
+          <div class="project__tags">
+            <span class="tag">Vue.js</span>
+            <span class="tag">Laravel</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </article>
+
+        <article class="project__card reveal">
+          <div class="project__header">
+            <span class="project__num">02</span>
+            <div class="project__links">
+              <a href="#" class="project__link">⌥ Code</a>
+              <a href="#" class="project__link">↗ Demo</a>
+            </div>
+          </div>
+          <h3 class="project__title">Analytics Dashboard</h3>
+          <p class="project__desc">
+            Bảng điều khiển phân tích dữ liệu real-time với biểu đồ
+            tương tác và báo cáo tự động theo lịch.
+          </p>
+          <div class="project__tags">
+            <span class="tag">React</span>
+            <span class="tag">D3.js</span>
+            <span class="tag">Node.js</span>
+          </div>
+        </article>
+
+        <article class="project__card reveal">
+          <div class="project__header">
+            <span class="project__num">03</span>
+            <div class="project__links">
+              <a href="#" class="project__link">⌥ Code</a>
+              <a href="#" class="project__link">↗ Demo</a>
+            </div>
+          </div>
+          <h3 class="project__title">App Đặt Lịch</h3>
+          <p class="project__desc">
+            Ứng dụng đặt lịch hẹn cho phòng khám, nhắc nhở tự động
+            qua SMS và email, quản lý bác sĩ và bệnh nhân.
+          </p>
+          <div class="project__tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">FCM</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section section--dark" id="contact">
+    <div class="container">
+      <h2 class="section__title reveal">
+        <span class="title__num">04.</span> Liên hệ
+      </h2>
+      <p class="contact__sub reveal">
+        Có dự án thú vị? Hãy nói chuyện với tôi.
+      </p>
+      <div class="contact__grid reveal">
+        <!-- Thay thông tin liên hệ của bạn vào đây -->
+        <a href="mailto:email@example.com" class="contact__card">
+          <span class="contact__icon">✉</span>
+          <span class="contact__label">Email</span>
+          <span class="contact__value">email@example.com</span>
+        </a>
+        <a href="https://github.com/username" target="_blank" class="contact__card">
+          <span class="contact__icon">⌥</span>
+          <span class="contact__label">GitHub</span>
+          <span class="contact__value">github.com/username</span>
+        </a>
+        <a href="https://linkedin.com/in/username" target="_blank" class="contact__card">
+          <span class="contact__icon">in</span>
+          <span class="contact__label">LinkedIn</span>
+          <span class="contact__value">linkedin.com/in/username</span>
+        </a>
+        <a href="tel:+84912345678" class="contact__card">
+          <span class="contact__icon">📞</span>
+          <span class="contact__label">Điện thoại</span>
+          <span class="contact__value">+84 912 345 678</span>
+        </a>
+      </div>
+      <a href="mailto:email@example.com" class="btn btn--primary reveal" style="margin-top:2.5rem">
+        Gửi lời nhắn →
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>© 2026 Nguyễn Văn An &mdash; Làm với <span class="highlight">♥</span> tại Hà Nội</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
